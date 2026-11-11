@@ -2,6 +2,10 @@
 /input/*
 !/input/README.md
 /outputs/
+/dataset/
+/sources/
+/specification/
+/manuscript/
 /verification/local_*/
 /figures/*.pdf
 /figures/figure_validation.md
@@ -13,3 +17,16 @@ __pycache__/
 .Rprofile
 .env
 *.log
+*.rds
+*.RDS
+*_support_rows.csv
+donor_reuse.csv
+terminal_donors.csv
+staffing_updates.csv
+trace.csv
+distributions.csv
+chain_md5.csv
+diagnostic_md5.csv
+source_fit_manifest.csv
+source_sha256.csv
+model_md5_*.csv

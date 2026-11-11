@@ -1,0 +1,7 @@
+"model_id","outcome","population","n","sites","valid","status"
+"q4_main_full",4,"B",71,2,FALSE,"insufficient prespecified staffing support"
+"q4_main_full",4,"A",49,2,FALSE,"insufficient prespecified staffing support"
+"q4_ppo_ER",4,"B",71,2,FALSE,"insufficient prespecified staffing support"
+"q4_ppo_ER",4,"A",49,2,FALSE,"insufficient prespecified staffing support"
+"q4_staffing_five_levels",4,"B",71,2,FALSE,"insufficient prespecified staffing support"
+"q4_staffing_five_levels",4,"A",49,2,FALSE,"insufficient prespecified staffing support"

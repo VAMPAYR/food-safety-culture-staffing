@@ -1,0 +1,6 @@
+"scenario","outcome","component","absolute_seed_difference","maximum_monte_carlo_error","exceeds_tolerance"
+"busy_lower",6,"beta_B",0.00350658812449078,0.00166772571148251,FALSE
+"busy_lower",6,"beta_A",0.00321435149735672,0.00159406201218325,FALSE
+"busy_lower",6,"d",0.0067209396218475,0.00317048726342323,FALSE
+"busy_lower",4,"beta_B",0.00237095510636001,0.0023037097315227,FALSE
+"busy_lower",4,"beta_A",0.00179592360422873,0.00195252952042684,FALSE

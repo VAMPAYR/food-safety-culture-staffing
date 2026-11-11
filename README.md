@@ -2,15 +2,17 @@
 
 This repository contains R code, aggregate results, and figures for a secondary analysis of the public EHS-Net food-worker survey described by Kramer et al. (2023). The analysis asks whether busy-period and absence coverage contribute information about perceived sick-worker exclusion and handwashing after adjustment for four culture scores and jurisdiction.
 
-The publication manuscript and private research documents are maintained separately. Raw questionnaires are obtained directly from CDC and are excluded from Git. No additional CDC data or clarification is needed to execute this analysis.
+The publication manuscript and private research documents are maintained separately. Survey records are obtained directly from CDC and are excluded from Git. No additional CDC data or clarification is needed to execute this analysis.
 
 ## Contents
 
 - `R/`: input checks, score derivation, ordinal and binary models, clustered inference, missing-data sensitivity, diagnostics, and tests.
 - `results/complete_case/`: aggregate complete-case outputs. The main analyses include 539 Q6 and 541 Q4 observations.
 - `results/imputation/mi_estimates.csv`: point estimates from both 50-chain imputation runs.
+- `results/extensions/`: aggregate summaries of joint covariance, ordinal-model sensitivity, and enriched missing-data analyses.
 - `figures/`: publication figures and the aggregate rows used to draw them.
 - `METHODS.md`: coding, estimation, diagnostics, and reporting choices needed to understand the code.
+- `EXTENSIONS.md`: commands, diagnostic review, and output definitions for the three post-results extensions.
 - `scripts/fetch_data.py`: verified public-data download, with no changes to parsed cell values.
 - `verification/`: package checks and source provenance.
 
@@ -32,7 +34,7 @@ python scripts/fetch_data.py
 
 ## Software and execution
 
-The recorded analysis used Windows, R 4.5.1, MASS 7.3-65, and parallel 4.5.1. Python 3 is required only to download and verify input; the downloader uses the standard library. The current provenance helper uses native Windows PowerShell and .NET SHA-256. No R package installation is needed beyond the packages included with that R installation.
+The original analysis used Windows, R 4.5.1, MASS 7.3-65, and parallel 4.5.1. The ordinal-model extension also used `ordinal` 2025.12.29. Install `ordinal` before running the extension checks. Each run records its actual package versions. The data downloader uses Python 3's standard library. Appendix Figure A1 uses Python 3 and Matplotlib; the saved figure used Matplotlib 3.10.5. Provenance helpers use native Windows PowerShell, .NET, or `certutil` for SHA-256.
 
 Run from the repository root. Put `Rscript` on PATH or replace it with the full path to your Rscript executable. These commands use fresh output directories and refuse to overwrite historical runs.
 
@@ -64,6 +66,31 @@ Rscript R/make_publication_figures.R
 ```
 
 To plot a new run, replace the corresponding aggregate result files only in a separate working copy after verifying their source and scope. The script checks the reported sample sizes and expected categories.
+
+## Post-results extensions
+
+Three additions examine the joint staffing covariance, selected ordinal-model restrictions, and missing-predictor assumptions. They were developed after inspection of the original results. They preserve the original questions and analyses.
+
+The joint-covariance extension reuses saved original fits. Reproduce `outputs/local_cc` first, then run the extension checks and the combined covariance/ordinal runner:
+
+```powershell
+Rscript R/run_priority123_validation.R --output-dir verification/local_extensions
+Rscript R/run_priority12.R --data input/data.csv --source-run outputs/local_cc --output-dir outputs/local_priority12
+```
+
+The enriched imputation has five scenarios and a separate diagnostic-review gate before outcome fitting. Follow [EXTENSIONS.md](EXTENSIONS.md) for generation, scenario-specific review, fitting, and continuation commands. Its coefficient summaries are point estimates. They have no pooled sampling intervals or hypothesis tests.
+
+Generate Appendix Figure A1 from the published aggregate covariance summaries:
+
+```powershell
+python scripts/make_priority123_figures.py --input-dir results/extensions/joint --output-dir outputs/local_figure_A1
+```
+
+The script checks all 32 jurisdiction contributions before drawing the PNG and PDF. Its supplied directory arguments make the public command independent of the original analysis directory.
+
+Saved fits and imputation checkpoints are generated locally and remain excluded from Git. The published package contains aggregate summaries and computational checks. It does not require unpublished research documents.
+
+[Extension-package verification](verification/extension_package_checks.md) records the 216 extension/baseline checks, 39 numerical-retry checks, final fit counts, figure reproduction, and release-boundary audit.
 
 ## Interpretation
 

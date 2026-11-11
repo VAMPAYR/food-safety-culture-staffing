@@ -1,0 +1,5 @@
+"model_id","outcome","n","sites","valid","inference_valid","status","log_likelihood"
+"q6_ppo_ER",6,539,8,TRUE,FALSE,"accepted; point estimates only",-412.477432562274
+"q6_staffing_five_levels",6,539,8,TRUE,FALSE,"accepted; point estimates only",-428.326035453343
+"q4_ppo_ER",4,541,8,TRUE,FALSE,"accepted; point estimates only",-312.935996422043
+"q4_staffing_five_levels",4,541,8,TRUE,FALSE,"accepted; point estimates only",-311.517404882241

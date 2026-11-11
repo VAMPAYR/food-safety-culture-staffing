@@ -1,0 +1,22 @@
+[
+  {
+    "original": "outputs/public_priority1_20261111_v1/joint_covariance_summary.csv",
+    "reproduction": "verification/priority12_cli_execution_v2/joint_extensions/joint_covariance_summary.csv",
+    "identical": true
+  },
+  {
+    "original": "outputs/public_priority1_20261111_v1/joint_covariance_geometry.csv",
+    "reproduction": "verification/priority12_cli_execution_v2/joint_extensions/joint_covariance_geometry.csv",
+    "identical": true
+  },
+  {
+    "original": "outputs/public_priority2_20261111_v1/ordinal_extension_point_estimates.csv",
+    "reproduction": "verification/priority12_cli_execution_v2/ordinal_extensions/ordinal_extension_point_estimates.csv",
+    "identical": true
+  },
+  {
+    "original": "outputs/public_priority2_20261111_v1/ordinal_extension_model_status.csv",
+    "reproduction": "verification/priority12_cli_execution_v2/ordinal_extensions/ordinal_extension_model_status.csv",
+    "identical": true
+  }
+]
