@@ -1,0 +1,15 @@
+# Local data and rerun output are never published by default.
+/input/*
+!/input/README.md
+/outputs/
+/verification/local_*/
+/figures/*.pdf
+/figures/figure_validation.md
+__pycache__/
+*.pyc
+.Rhistory
+.RData
+.Renviron
+.Rprofile
+.env
+*.log

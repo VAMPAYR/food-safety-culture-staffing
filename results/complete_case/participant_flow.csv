@@ -1,0 +1,11 @@
+"outcome","population","n"
+6,"input",579
+6,"outcome_observed",577
+6,"predictors_complete",541
+6,"outcome_and_predictors_complete",539
+6,"worker_covariates_complete",485
+4,"input",579
+4,"outcome_observed",576
+4,"predictors_complete",542
+4,"outcome_and_predictors_complete",541
+4,"worker_covariates_complete",487

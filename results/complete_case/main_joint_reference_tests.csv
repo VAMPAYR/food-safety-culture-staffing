@@ -1,0 +1,3 @@
+"model_id","term","estimate","se","lower","upper","exp_estimate","exp_lower","exp_upper","statistic","df1","df2","p_reference","valid","status"
+"q6_main_full","RQ1",,,,,,,,4.31250921975763,2,7,0.0601826428233844,TRUE,"approximate_site_F_reference"
+"q4_main_full","RQ3",,,,,,,,25.892236204367,2,7,0.00058267173786272,TRUE,"approximate_site_F_reference"

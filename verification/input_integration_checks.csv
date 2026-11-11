@@ -1,0 +1,7 @@
+"test","passed"
+"manifest_has_every_requested_file",TRUE
+"manifest_uses_full_sha256_digests",TRUE
+"known_sha256_vector_matches",TRUE
+"rq4_has_six_cells_and_four_levels",TRUE
+"rq4_within_cell_outcome_counts_and_percentages",TRUE
+"no_input_descriptive_or_hash_warnings",TRUE

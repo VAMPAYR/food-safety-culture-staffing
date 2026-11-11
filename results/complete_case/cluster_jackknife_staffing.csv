@@ -1,0 +1,6 @@
+"model_id","outcome","term","estimate","se","lower","upper","exp_estimate","exp_lower","exp_upper","df","valid","status","n_deletions","n_valid_deletions"
+"q6_main_full","Q6","B_c",0.156339151791007,0.197374853624594,-0.310378213744285,0.623056517326299,1.16922267981912,0.733169608956322,1.86461857979829,7,TRUE,"approximate_full_centered_cluster_jackknife_t7_sensitivity",8,8
+"q6_main_full","Q6","A_c",0.203039386227364,0.266300149965132,-0.426660406582983,0.832739179037711,1.2251207201805,0.652685162181592,2.29960916224718,7,TRUE,"approximate_full_centered_cluster_jackknife_t7_sensitivity",8,8
+"q6_main_full","Q6","A_minus_B",0.0467002344363569,0.445259760593168,-1.00617179372064,1.09957226259336,1.04780786528194,0.365615957209385,3.00288130454309,7,TRUE,"approximate_full_centered_cluster_jackknife_t7_sensitivity",8,8
+"q4_main_full","Q4","B_c",0.147542542099199,0.195913224060587,-0.315718618722195,0.610803702920594,1.15898258933327,0.72926462271181,1.84191115343391,7,TRUE,"approximate_full_centered_cluster_jackknife_t7_sensitivity",8,8
+"q4_main_full","Q4","A_c",0.252463379099321,0.226337194414474,-0.282739039850614,0.787665798049256,1.2871923571482,0.753716452155778,2.19825925195314,7,TRUE,"approximate_full_centered_cluster_jackknife_t7_sensitivity",8,8

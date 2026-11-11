@@ -1,0 +1,3 @@
+"outcome","n","same_rows","full_log_likelihood","reduced_log_likelihood","delta_log_likelihood","decrease_apparent_mean_negative_log_score","status"
+6,539,TRUE,-432.2833613667,-436.548336467661,4.26497510096169,0.00791275528935379,"apparent same-row fit only"
+4,541,TRUE,-317.634662663717,-322.585959884199,4.95129722048227,0.0091521205554201,"apparent same-row fit only"

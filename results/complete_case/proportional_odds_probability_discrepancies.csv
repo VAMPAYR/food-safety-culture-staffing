@@ -1,0 +1,7 @@
+"outcome","threshold","n","mean_absolute_probability_difference","maximum_absolute_probability_difference","status"
+6,1,539,0.0477348168784819,0.521538908845345,"diagnostic"
+6,2,539,0.0319363555451161,0.200621433322399,"diagnostic"
+6,3,539,0.0411434693706365,0.2051447006369,"diagnostic"
+4,1,541,,,"inconclusive: one or both fits invalid"
+4,2,541,0.0313252195317865,0.522442868495548,"diagnostic"
+4,3,541,0.0325918212711468,0.216460665901768,"diagnostic"
